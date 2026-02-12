@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- View Live Project: [text](url)
+- View Live Project: [https://task-manager-js-project.netlify.app](https://task-manager-js-project.netlify.app)
 
 ## My process
 
@@ -86,3 +86,19 @@ Writing clean JavaScript code, using utility functions and modular logic, helped
 ### Continued-development
 
 I plan to continue deepening my understanding of Asynchronous JavaScript and working with more complex APIs. My next focus will be on learning React.js to manage application state more efficiently and explore component-based architecture.
+
+### Useful resources
+
+- [Netlify - Hosting & Deployment](https://netlify.com/).
+- [Getform - Form backend](https://getform.io).
+- [Optimizilla - Image optimizer](https://imagecompressor.com).
+- [Elementor - Online Px to Rem Converter](https://elementor.com/blog/px-to-rem).
+- [Elementor - Online CSS Minifier](https://elementor.com/it/tools/free-css-minifier).
+- [Elementor - Online JS Minifier](https://elementor.com/tools/javascript-minifier).
+- [Color Hunt - Color Platters](https://colorhunt.co).
+
+## Author
+
+- LinkedIn - [@iamRBLM](https://www.linkedin.com/in/iamrblm).
+- Twitter - [@iamRBLM](https://x.com/iamRBLM).
+- DEV Community - [@iamRBLM](https://dev.to/iamrblm).
