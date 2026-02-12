@@ -87,7 +87,7 @@ Writing clean JavaScript code, using utility functions and modular logic, helped
 
 I plan to continue deepening my understanding of Asynchronous JavaScript and working with more complex APIs. My next focus will be on learning React.js to manage application state more efficiently and explore component-based architecture.
 
-### Useful resources
+## Useful resources
 
 - [Netlify - Hosting & Deployment](https://netlify.com/).
 - [Getform - Form backend](https://getform.io).
