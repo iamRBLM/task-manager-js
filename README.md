@@ -90,11 +90,8 @@ I plan to continue deepening my understanding of Asynchronous JavaScript and wor
 ## Useful resources
 
 - [Netlify - Hosting & Deployment](https://netlify.com/).
-- [Getform - Form backend](https://getform.io).
 - [Optimizilla - Image optimizer](https://imagecompressor.com).
 - [Elementor - Online Px to Rem Converter](https://elementor.com/blog/px-to-rem).
-- [Elementor - Online CSS Minifier](https://elementor.com/it/tools/free-css-minifier).
-- [Elementor - Online JS Minifier](https://elementor.com/tools/javascript-minifier).
 - [Color Hunt - Color Platters](https://colorhunt.co).
 
 ## Author
