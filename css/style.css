@@ -1,0 +1,235 @@
+/* =================================
+/* Google fonts 
+/* ================================= */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* =================================
+/* Variables 
+/* ================================= */
+:root {
+  /* Dark Theme Colors */
+  --bg-body: #121212;
+  --bg-header-footer: #1a1a1a;
+  --bg-main: #1e1e1e;
+  --bg-input: #2c2c2c;
+  --bg-li-hover: #252525;
+
+  /* Accent Colors */
+  --primary-blue: #3498db;
+  --primary-blue-hover: #4ea0d7;
+  --success-green: #219150;
+  --success-green-hover: #1b7a43;
+  --warning-yellow: #d4ac0d;
+  --danger-red: #c0392b;
+
+  /* Text & Borders */
+  --text-main: #e0e0e0;
+  --text-white: #ffffff;
+  --text-muted: #666666;
+  --border-dark: #333333;
+  --border-li: #2c2c2c;
+}
+
+/* =================================
+/* General styles 
+/* ================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-blue);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--primary-blue-hover);
+}
+
+/* =================================
+/* Layout Components 
+/* ================================= */
+/* Header */
+header {
+  background-color: var(--bg-header-footer);
+  color: var(--text-white);
+  text-align: center;
+  padding: 2rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Container */
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: var(--bg-main);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  background: var(--bg-header-footer);
+  color: var(--text-white);
+  margin-top: auto;
+}
+
+/* =================================
+/* Form & Inputs 
+/* ================================= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid var(--border-dark);
+  background-color: var(--bg-input);
+  color: var(--text-white);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+}
+
+#addBtn {
+  padding: 12px;
+  background-color: var(--success-green);
+  color: var(--text-white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#addBtn:hover {
+  background-color: var(--success-green-hover);
+}
+
+/* =================================
+/* Controls & Filtering 
+/* ================================= */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.controls button {
+  padding: 8px 16px;
+  border: 1px solid var(--primary-blue);
+  background: transparent;
+  color: var(--primary-blue);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.controls button:hover {
+  background-color: var(--primary-blue);
+  color: var(--text-white);
+}
+
+/* =================================
+/* Task List Styles 
+/* ================================= */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid var(--border-li);
+  transition: background 0.2s;
+}
+
+li:hover {
+  background-color: var(--bg-li-hover);
+}
+
+li span {
+  width: 250px;
+}
+
+/* Secondary span (date/meta info) */
+span span {
+  font-size: 0.8rem;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.complete-btn,
+.remove-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.complete-btn {
+  background-color: var(--warning-yellow);
+  color: var(--bg-body);
+}
+
+.remove-btn {
+  background-color: var(--danger-red);
+  color: var(--text-white);
+}
+
+/* =================================
+/* Responsive 
+/* ================================= */
+@media (max-width: 480px) {
+  main {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .controls button {
+    flex: 1 1 40%;
+  }
+}

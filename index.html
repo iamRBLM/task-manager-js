@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Task Manager by Itamar Rosenblum - Elegant and simple To-Do List application built with Vanilla JavaScript, featuring task filtering, sorting by date, and persistent storage."
+    />
+    <meta
+      name="keywords"
+      content="Itamar Rosenblum, Task Manager, To-Do List App, Vanilla JavaScript, Web Development Project, Frontend Developer, Productivity Tool"
+    />
+    <meta name="author" content="Itamar Rosenblum" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Main js -->
+    <script src="js/script.js" defer></script>
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Task Manager</h1>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Form -->
+      <form>
+        <input type="text" id="taskInput" placeholder="What is your task?" />
+        <input type="date" id="dateInput" />
+        <button type="button" id="addBtn">Add Task</button>
+      </form>
+
+      <!-- Controls container -->
+      <div class="controls">
+        <button type="button" id="showAll">All</button>
+        <button type="button" id="showCompleted">Completed</button>
+        <button type="button" id="showActive">Active</button>
+        <button type="button" id="sortDate">Sort By Date</button>
+      </div>
+
+      <!-- Dynamic list -->
+      <ul id="taskList"></ul>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>
+        Made with ❤️ by
+        <a href="https://itamarrosenblum.netlify.app/" target="_blank"
+          >Itamar Rosenblum</a
+        >
+        &copy; 2026
+      </p>
+    </footer>
+  </body>
+</html>
